@@ -4,7 +4,7 @@ import { BASE_URL , IMAGE_URL} from "../../services/config";
 import { GET_PRODUCTS } from "../../services/urls";
 import { useQuery } from "react-query";
 import axios from "axios";
-import { toast } from "react-toastify";
+
 
 // components
 

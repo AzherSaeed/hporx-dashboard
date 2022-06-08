@@ -17,13 +17,11 @@ import Profile from "views/Profile.js";
 import Index from "views/Index.js";
 import { QueryClientProvider, QueryClient } from "react-query";
 
-import { ToastContainer } from "react-toastify";
 
 const queryClient = new QueryClient();
 
 ReactDOM.render(
   <QueryClientProvider client={queryClient}>
-    <ToastContainer />
     <BrowserRouter>
       <Switch>
         {/* add routes with layouts */}

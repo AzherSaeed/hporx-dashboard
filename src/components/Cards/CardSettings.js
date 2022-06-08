@@ -4,7 +4,7 @@ import { BASE_URL } from "../../services/config";
 import { ADD_PRODUCT } from "../../services/urls";
 import { useMutation } from "react-query";
 import axios from "axios";
-import { toast } from "react-toastify";
+
 
 // components
 
@@ -30,15 +30,11 @@ export default function CardSettings() {
         });
         setProductImage("");
         alert("successful added");
-        toast.success(response.data.message, {
-          position: toast.POSITION.TOP_RIGHT,
-        });
+      
       },
 
       onError: (err, variables, snapshotValue) => {
-        toast.error("Please provide valid detail", {
-          position: toast.POSITION.TOP_RIGHT,
-        });
+        alert('some thing went wrong')
       },
     }
   );
