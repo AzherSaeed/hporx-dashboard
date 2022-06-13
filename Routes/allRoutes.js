@@ -38,7 +38,6 @@ routers.post("/getInTouchQuery", getInTouchQuerySubmittion);
 routers.get("/getAddresses", getCountryCity);
 routers.post("/subcription", subcriptionQuerySubmittion);
 routers.get("/getAllProducts", getAllProducts);
-
 routers.post("/addProduct", upload.single("productImage"), (req, res) => {
   try {
     const product = new productSchema({
@@ -65,14 +64,3 @@ routers.post("/addProduct", upload.single("productImage"), (req, res) => {
 });
 
 module.exports = routers;
-
-// const getShipmentFetchEstimate = async (obj) => {
-//     const promise = [];
-//     obj.forEach(item => {
-//       promise.push(
-//         getestimate(addrsz)
-//       )
-//     });
-//     const res = await Promise.all(promise);
-//     return res;
-//   }
