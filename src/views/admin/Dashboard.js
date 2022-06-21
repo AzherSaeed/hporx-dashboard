@@ -29,11 +29,11 @@ export default function Dashboard() {
     }
   },[])
 
-  useEffect(() => {
-    if(validaionToken && tokenVarification){
-      history.replace('/auth')
-    }
-  },[validaionToken , tokenVarification])
+  // useEffect(() => {
+  //   if(validaionToken && tokenVarification){
+  //     history.replace('/auth')
+  //   }
+  // },[validaionToken , tokenVarification])
 
 
 
