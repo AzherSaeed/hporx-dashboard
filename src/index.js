@@ -20,6 +20,8 @@ import { QueryClientProvider, QueryClient } from "react-query";
 
 const queryClient = new QueryClient();
 
+
+
 ReactDOM.render(
   <QueryClientProvider client={queryClient}>
     <BrowserRouter>
@@ -30,9 +32,9 @@ ReactDOM.render(
         {/* add routes without layouts */}
         <Route path="/landing" exact component={Landing} />
         <Route path="/profile" exact component={Profile} />
-        <Route path="/" exact component={Admin} />
+        <Route path="/auth" exact component={Auth} />
         {/* add redirect for first page */}
-        <Redirect from="*" to="/" />
+        <Redirect from="*" to="/auth" />
       </Switch>
     </BrowserRouter>
   </QueryClientProvider>,

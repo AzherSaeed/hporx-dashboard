@@ -1,5 +1,5 @@
-import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import React , {useState , useEffect} from "react";
+import { Switch, Route, Redirect , useHistory } from "react-router-dom";
 
 // components
 
@@ -16,6 +16,31 @@ import Settings from "views/admin/Settings.js";
 import Tables from "views/admin/Tables.js";
 
 export default function Admin() {
+  const history = useHistory()
+
+  const [tokenVarification, settokenVarification] = useState(false)
+
+  const validaionToken = localStorage.getItem('validation')
+
+  // useEffect(() => {
+  //     if(validaionToken){
+  //       settokenVarification(true)
+  //     }
+  // }, [validaionToken])
+
+
+  
+
+  // useEffect(() => {
+  //   if(validaionToken && tokenVarification){
+  //     history.replace('/auth')
+  //   }
+  // },[validaionToken , tokenVarification])
+  
+
+  
+
+
   return (
     <>
       <Sidebar />

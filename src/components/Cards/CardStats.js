@@ -58,9 +58,9 @@ export default function CardStats({
 
 CardStats.defaultProps = {
   statSubtitle: "Traffic",
-  statTitle: "350,897",
+  statTitle: "0",
   statArrow: "up",
-  statPercent: "3.48",
+  statPercent: "0",
   statPercentColor: "text-emerald-500",
   statDescripiron: "Since last month",
   statIconName: "far fa-chart-bar",

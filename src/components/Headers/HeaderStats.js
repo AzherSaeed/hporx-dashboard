@@ -16,9 +16,9 @@ export default function HeaderStats() {
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
                   statSubtitle="TRAFFIC"
-                  statTitle="350,897"
+                  statTitle="0"
                   statArrow="up"
-                  statPercent="3.48"
+                  statPercent="0"
                   statPercentColor="text-emerald-500"
                   statDescripiron="Since last month"
                   statIconName="far fa-chart-bar"
@@ -28,9 +28,9 @@ export default function HeaderStats() {
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
                   statSubtitle="NEW USERS"
-                  statTitle="2,356"
+                  statTitle="0"
                   statArrow="down"
-                  statPercent="3.48"
+                  statPercent="0"
                   statPercentColor="text-red-500"
                   statDescripiron="Since last week"
                   statIconName="fas fa-chart-pie"
@@ -40,9 +40,9 @@ export default function HeaderStats() {
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
                   statSubtitle="SALES"
-                  statTitle="924"
+                  statTitle="0"
                   statArrow="down"
-                  statPercent="1.10"
+                  statPercent="0"
                   statPercentColor="text-orange-500"
                   statDescripiron="Since yesterday"
                   statIconName="fas fa-users"
@@ -52,9 +52,9 @@ export default function HeaderStats() {
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
                   statSubtitle="PERFORMANCE"
-                  statTitle="49,65%"
+                  statTitle="0"
                   statArrow="up"
-                  statPercent="12"
+                  statPercent="0"
                   statPercentColor="text-emerald-500"
                   statDescripiron="Since last month"
                   statIconName="fas fa-percent"
